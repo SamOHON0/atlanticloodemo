@@ -60,12 +60,15 @@ nav a:hover{background:var(--off-white);color:var(--blue)}
 .hero-stats{display:flex;gap:32px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.1)}
 .hero-stat strong{display:block;font-size:1.6rem;font-weight:700}.hero-stat span{font-size:.82rem;color:rgba(255,255,255,.5)}
 
-/* HERO MINI GALLERY (right side) */
-.hero-mini{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.hero-mini img{width:100%;border-radius:14px;border:2px solid rgba(255,255,255,.12);object-fit:cover;transition:all .3s}
-.hero-mini img:hover{border-color:var(--teal);transform:scale(1.02)}
-.hero-mini img:nth-child(1){height:220px;grid-column:1/-1}
-.hero-mini img:nth-child(2),.hero-mini img:nth-child(3){height:160px}
+/* HERO SOLUTIONS CARD */
+.hero-card{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:32px;width:100%;max-width:400px;margin-left:auto}
+.hero-card h3{font-size:1.1rem;font-weight:700;margin-bottom:18px;color:#fff}
+.hero-card-items{display:flex;flex-direction:column;gap:12px}
+.hero-card-item{display:flex;align-items:center;gap:14px;padding:12px 16px;background:rgba(255,255,255,.05);border-radius:12px;border:1px solid rgba(255,255,255,.06);transition:all .25s;cursor:pointer;text-decoration:none;color:inherit}
+.hero-card-item:hover{background:rgba(255,255,255,.1);transform:translateX(4px)}
+.hc-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
+.hero-card-item h4{font-size:.88rem;font-weight:600;color:#fff}
+.hero-card-item p{font-size:.76rem;color:rgba(255,255,255,.5);margin-top:1px}
 
 /* ===== PHOTO CAROUSEL ===== */
 .carousel-section{padding:0;overflow:hidden;background:var(--navy)}
@@ -215,21 +218,104 @@ footer a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.88rem;transi
 .fade-up{opacity:0;transform:translateY(24px);transition:all .6s cubic-bezier(.16,1,.3,1)}.fade-up.visible{opacity:1;transform:translateY(0)}
 
 @media(max-width:1024px){
-  .hero-inner{grid-template-columns:1fr}.hero-mini{display:none}.hero h1{font-size:2.6rem}
-  .services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.split-section,.contact-grid,.features-grid{grid-template-columns:1fr}
+  .hero-inner{grid-template-columns:1fr}.hero-card{display:none}.hero h1{font-size:2.6rem}
+  .services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.split-section,.contact-grid{grid-template-columns:1fr}
+  .features-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr 1fr}
+  .about-img img{min-height:300px}
 }
 @media(max-width:768px){
+  /* NAV */
   nav{display:none}.hamburger{display:block}
   nav.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--white);padding:16px 24px;border-bottom:1px solid var(--light-gray);box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:99}
   nav.open .nav-dropdown .dropdown-menu{display:block;position:static;box-shadow:none;border:none;padding-left:16px}
-  .hero{min-height:auto;padding:60px 24px}.hero h1{font-size:2rem}.hero-stats{flex-direction:column;gap:16px}
-  .services-grid{grid-template-columns:1fr}section{padding:60px 24px}
-  .section-title,.page-hero h1{font-size:1.8rem}.cta-banner h2{font-size:1.8rem}
-  .carousel-slide{width:280px;height:200px}
-  .footer-grid{grid-template-columns:1fr;gap:32px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}
+  nav.open .nav-dropdown>a::after{content:' ▸'}
+  /* HERO */
+  .hero{min-height:auto;padding:60px 20px 50px}
+  .hero h1{font-size:1.85rem;line-height:1.2}
+  .hero-text{font-size:.95rem;margin-bottom:24px}
+  .hero-buttons{flex-direction:column;gap:10px}
+  .hero-buttons .btn{width:100%;justify-content:center;padding:14px 20px}
+  .hero-stats{flex-direction:row;gap:0;justify-content:space-between}
+  .hero-stat{text-align:center;flex:1}
+  .hero-stat strong{font-size:1.3rem}
+  .hero-stat span{font-size:.72rem}
+  /* SECTIONS */
+  section{padding:50px 16px}
+  .section-title{font-size:1.6rem}
+  .section-subtitle{font-size:.92rem}
+  .page-hero{padding:50px 16px 40px}
+  .page-hero h1{font-size:1.7rem}
+  .page-hero p{font-size:.92rem}
+  .page-hero .breadcrumb{font-size:.78rem}
+  /* SERVICES */
+  .services-grid{grid-template-columns:1fr;gap:16px;margin-top:32px}
+  .service-img{height:140px;font-size:2.8rem}
+  .service-body{padding:20px}
+  .service-body h3{font-size:1rem}
+  .service-body p{font-size:.82rem}
+  /* CAROUSEL */
+  .carousel-heading{padding:36px 16px 0}
+  .carousel-heading h2{font-size:1.5rem}
+  .carousel-slide{width:260px;height:180px}
+  /* ABOUT */
+  .about-grid{gap:32px;margin-top:32px}
+  .about-feature{padding:16px;gap:12px}
+  .af-icon{width:40px;height:40px;font-size:1.1rem}
+  .about-feature h4{font-size:.92rem}
+  .about-feature p{font-size:.8rem}
+  .about-img img{min-height:250px}
+  .about-img .img-badge{font-size:.78rem;padding:10px 14px;bottom:12px;left:12px}
+  /* FAQ */
+  .faq-q{padding:16px 20px;font-size:.9rem}
+  .faq-a-inner{padding:0 20px 16px;font-size:.84rem}
+  /* CTA */
+  .cta-banner{padding:50px 16px}
+  .cta-banner h2{font-size:1.6rem}
+  .cta-banner p{font-size:.92rem;margin-bottom:24px}
+  .cta-buttons{flex-direction:column;align-items:center;gap:10px}
+  .cta-buttons .btn{width:100%;max-width:300px;justify-content:center}
+  /* CONTACT */
+  .contact-grid{gap:32px;margin-top:24px}
+  .contact-form{padding:24px}
+  .contact-form input,.contact-form textarea,.contact-form select{padding:11px 14px;font-size:.88rem}
+  .contact-card{padding:16px;gap:12px}
+  .cc-icon{width:40px;height:40px;font-size:1.1rem}
+  /* INVOICE */
+  .invoice-form{padding:24px}
+  /* FEATURES */
+  .feature-card{padding:18px;gap:12px}
+  .feature-icon{width:40px;height:40px;font-size:1.1rem}
+  .feature-card h3{font-size:.9rem}
+  .feature-card p{font-size:.82rem}
+  /* SPLIT */
+  .split-section{gap:32px}
+  .split-visual{padding:32px}
+  .split-visual h3{font-size:1.25rem}
+  .split-image img{min-height:250px}
+  /* FOOTER */
+  .top-bar-inner{justify-content:center;text-align:center}
   .top-bar-inner>div:last-child{display:none}
-  .chat-widget{width:calc(100vw - 32px);right:16px;bottom:88px}.floating-buttons{bottom:16px;right:16px}
+  .footer-grid{grid-template-columns:1fr;gap:28px}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center}
+  /* FLOATING */
+  .floating-buttons{bottom:16px;right:16px;gap:10px}
+  .fab{width:50px;height:50px;font-size:1.3rem}
+  .chat-widget{width:calc(100vw - 24px);right:12px;bottom:82px;max-height:420px;border-radius:16px}
+  .chat-header{padding:16px 20px}
+  .chat-body{padding:16px}
+  .chat-options{padding:0 16px 12px}
+  .chat-footer{padding:12px 16px}
+}
+@media(max-width:380px){
+  .hero h1{font-size:1.6rem}
+  .hero-badge{font-size:.72rem;padding:5px 12px}
+  .btn{padding:12px 20px;font-size:.88rem}
+  .hero-stats{flex-wrap:wrap;gap:8px}
+  .hero-stat{flex:none;width:calc(33% - 6px)}
+  .section-title{font-size:1.4rem}
+  .logo{font-size:1.2rem}
+  .logo-icon{width:34px;height:34px;font-size:.95rem}
 }
 </style>
 </head>
@@ -281,10 +367,14 @@ footer a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.88rem;transi
         <div class="hero-stat"><strong>24hr</strong><span>Turnaround Available</span></div>
       </div>
     </div>
-    <div class="hero-mini">
-      <img src="images/event-loos.jpg" alt="Country Classic event loos" loading="lazy">
-      <img src="images/work-site-loo.jpg" alt="Work site portable toilets" loading="lazy">
-      <img src="images/service-tank.jpg" alt="Effluent service tank" loading="lazy">
+    <div class="hero-card">
+      <h3>Our Solutions</h3>
+      <div class="hero-card-items">
+        <a class="hero-card-item" onclick="navigate('work-site-loo')"><div class="hc-icon" style="background:rgba(0,180,216,.15);color:var(--teal)">🏗️</div><div><h4>Work Site Loos</h4><p>Built tough for construction</p></div></a>
+        <a class="hero-card-item" onclick="navigate('country-classic-loo')"><div class="hc-icon" style="background:rgba(34,197,94,.15);color:var(--green)">🎉</div><div><h4>Event Toilets</h4><p>Premium units for any occasion</p></div></a>
+        <a class="hero-card-item" onclick="navigate('wheelchair-accessible-loo')"><div class="hc-icon" style="background:rgba(139,92,246,.15);color:#A78BFA">♿</div><div><h4>Accessible Units</h4><p>Wheelchair-friendly options</p></div></a>
+        <a class="hero-card-item" onclick="navigate('effluent-holding-tanks')"><div class="hc-icon" style="background:rgba(234,179,8,.15);color:#EAB308">🛢️</div><div><h4>Holding Tanks &amp; Servicing</h4><p>1,000L to 2,500L options</p></div></a>
+      </div>
     </div>
   </div>
 </section>
@@ -521,12 +611,4 @@ function chatQuickReply(t){
     else if(t.includes('areas')||t.includes('cover'))r='We cover Limerick, Clare, Cork, Kerry, Galway, Tipperary, Kilkenny, and nationwide.';
     else if(t.includes('event'))r="For events, our Country Classic Loo is the most popular. Self-sanitising, double insulated, looks great. How many guests?";
     else r='Thanks! Call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a> or <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a>.';
-    addChatMsg(r,'bot')},800);
-}
-function sendChat(){const i=document.getElementById('chatInput');const t=i.value.trim();if(!t)return;i.value='';addChatMsg(t,'user');document.getElementById('chatOptions').style.display='none';
-  setTimeout(()=>{addChatMsg('Thanks! Call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a> or <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a> for the quickest response.','bot')},1000)}
-function addChatMsg(h,t){const b=document.getElementById('chatBody');const m=document.createElement('div');m.className='chat-msg '+t;m.innerHTML=h;b.appendChild(m);b.scrollTop=b.scrollHeight}
-const observer=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible')})},{threshold:.1});
-window.addEventListener('hashchange',renderPage);renderPage();
-</script>
-</body></html>
+    addChatMsg(r,'bot
