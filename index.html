@@ -3,22 +3,18 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Atlantic Loo Hire | Portable Toilets & Loos | Limerick</title>
+<title>Atlantic Loo Hire | Portable Toilets &amp; Loos | Limerick</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 :root{--navy:#0B1D3A;--blue:#1B4B8F;--sky:#3A8FD6;--teal:#00B4D8;--white:#FFF;--off-white:#F4F7FA;--gray:#6B7B8D;--light-gray:#E2E8F0;--green:#22C55E;--font-body:'DM Sans',sans-serif;--font-display:'Playfair Display',serif}
 html{scroll-behavior:smooth}
 body{font-family:var(--font-body);color:var(--navy);background:var(--white);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-
-/* TOP BAR */
 .top-bar{background:var(--navy);color:rgba(255,255,255,.8);font-size:.8rem;padding:8px 0}
 .top-bar-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
 .top-bar a{color:rgba(255,255,255,.85);text-decoration:none;transition:color .2s}.top-bar a:hover{color:var(--teal)}
 .top-bar-left{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
 .top-bar-left span{display:flex;align-items:center;gap:5px}
-
-/* HEADER */
 header{background:var(--white);border-bottom:1px solid var(--light-gray);position:sticky;top:0;z-index:100}
 .header-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;height:72px}
 .logo{font-family:var(--font-display);font-size:1.4rem;font-weight:800;color:var(--navy);text-decoration:none;display:flex;align-items:center;gap:10px;cursor:pointer}
@@ -34,8 +30,6 @@ nav a:hover{background:var(--off-white);color:var(--blue)}
 .dropdown-menu{display:none;position:absolute;top:100%;left:0;background:var(--white);border:1px solid var(--light-gray);border-radius:12px;padding:8px;min-width:220px;box-shadow:0 8px 32px rgba(0,0,0,.08);z-index:200}
 .dropdown-menu a{display:block;padding:10px 14px;border-radius:8px;font-size:.85rem}.dropdown-menu a:hover{background:var(--off-white)}
 .nav-dropdown:hover .dropdown-menu{display:block}
-
-/* BUTTONS */
 .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:12px;font-size:.95rem;font-weight:600;text-decoration:none;transition:all .25s;cursor:pointer;border:none;font-family:var(--font-body)}
 .btn-primary{background:var(--teal);color:var(--navy)}.btn-primary:hover{background:#00c9f0;transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,180,216,.3)}
 .btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.3)}.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.05)}
@@ -43,8 +37,6 @@ nav a:hover{background:var(--off-white);color:var(--blue)}
 .btn-white{background:#fff;color:var(--navy)}.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.2)}
 .btn-whatsapp{background:#25D366;color:#fff}.btn-whatsapp:hover{background:#1ebe5a;transform:translateY(-2px)}
 .page{display:none}.page.active{display:block}
-
-/* ===== HERO WITH BG IMAGE ===== */
 .hero{position:relative;min-height:600px;display:flex;align-items:center;padding:100px 24px 80px;overflow:hidden;color:#fff}
 .hero-bg{position:absolute;inset:0;z-index:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover}
@@ -59,8 +51,6 @@ nav a:hover{background:var(--off-white);color:var(--blue)}
 .hero-buttons{display:flex;gap:12px;flex-wrap:wrap}
 .hero-stats{display:flex;gap:32px;margin-top:40px;padding-top:32px;border-top:1px solid rgba(255,255,255,.1)}
 .hero-stat strong{display:block;font-size:1.6rem;font-weight:700}.hero-stat span{font-size:.82rem;color:rgba(255,255,255,.5)}
-
-/* HERO SOLUTIONS CARD */
 .hero-card{background:rgba(255,255,255,.06);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:32px;width:100%;max-width:400px;margin-left:auto}
 .hero-card h3{font-size:1.1rem;font-weight:700;margin-bottom:18px;color:#fff}
 .hero-card-items{display:flex;flex-direction:column;gap:12px}
@@ -69,22 +59,18 @@ nav a:hover{background:var(--off-white);color:var(--blue)}
 .hc-icon{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0}
 .hero-card-item h4{font-size:.88rem;font-weight:600;color:#fff}
 .hero-card-item p{font-size:.76rem;color:rgba(255,255,255,.5);margin-top:1px}
-
-/* ===== PHOTO CAROUSEL ===== */
 .carousel-section{padding:0;overflow:hidden;background:var(--navy)}
 .carousel-track-wrapper{position:relative;padding:48px 0}
-.carousel-track{display:flex;gap:20px;animation:scroll 25s linear infinite;width:max-content}
+.carousel-track{display:flex;gap:20px;animation:cscroll 25s linear infinite;width:max-content}
 .carousel-track:hover{animation-play-state:paused}
 .carousel-slide{flex-shrink:0;width:340px;height:240px;border-radius:16px;overflow:hidden;position:relative;border:2px solid rgba(255,255,255,.08);transition:all .3s}
 .carousel-slide:hover{border-color:var(--teal);transform:scale(1.02)}
 .carousel-slide img{width:100%;height:100%;object-fit:cover}
 .carousel-slide .slide-label{position:absolute;bottom:0;left:0;right:0;padding:16px 20px;background:linear-gradient(to top,rgba(11,29,58,.85),transparent);color:#fff;font-size:.85rem;font-weight:600}
-@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes cscroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 .carousel-heading{text-align:center;padding:48px 24px 0;background:var(--navy);color:#fff}
 .carousel-heading h2{font-family:var(--font-display);font-size:2rem;font-weight:800}
 .carousel-heading p{color:rgba(255,255,255,.5);font-size:.95rem;margin-top:8px}
-
-/* ===== SECTIONS ===== */
 section{padding:80px 24px}
 .section-inner{max-width:1200px;margin:0 auto}
 .section-label{display:inline-flex;align-items:center;gap:8px;font-size:.82rem;font-weight:600;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px}
@@ -92,19 +78,15 @@ section{padding:80px 24px}
 .section-title{font-family:var(--font-display);font-size:2.2rem;font-weight:800;line-height:1.2;margin-bottom:16px}
 .section-subtitle{font-size:1.05rem;color:var(--gray);line-height:1.7;max-width:600px}
 .bg-alt{background:var(--off-white)}
-
-/* SERVICE CARDS (emoji/gradient) */
 .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
 .service-card{background:var(--white);border-radius:16px;overflow:hidden;border:1px solid var(--light-gray);transition:all .3s;text-decoration:none;color:inherit;display:flex;flex-direction:column;cursor:pointer}
 .service-card:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(11,29,58,.08);border-color:var(--sky)}
-.service-img{height:180px;display:flex;align-items:center;justify-content:center;font-size:3.5rem;position:relative}
+.service-img{height:180px;display:flex;align-items:center;justify-content:center;font-size:3.5rem}
 .service-body{padding:24px;flex:1;display:flex;flex-direction:column}
 .service-body h3{font-size:1.1rem;font-weight:700;margin-bottom:10px}
 .service-body p{font-size:.88rem;color:var(--gray);line-height:1.65;flex:1}
 .service-link{display:inline-flex;align-items:center;gap:6px;color:var(--blue);font-weight:600;font-size:.88rem;margin-top:16px;transition:gap .2s}
 .service-card:hover .service-link{gap:10px}
-
-/* ABOUT / WHY US */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
 .about-features{display:flex;flex-direction:column;gap:20px}
 .about-feature{display:flex;gap:16px;padding:20px;border-radius:14px;border:1px solid var(--light-gray);transition:all .25s}
@@ -115,26 +97,19 @@ section{padding:80px 24px}
 .about-img{border-radius:20px;overflow:hidden;position:relative}
 .about-img img{width:100%;height:100%;object-fit:cover;min-height:400px;display:block}
 .about-img .img-badge{position:absolute;bottom:20px;left:20px;background:rgba(11,29,58,.85);backdrop-filter:blur(8px);color:#fff;padding:12px 20px;border-radius:12px;font-size:.85rem;font-weight:600;border:1px solid rgba(255,255,255,.1)}
-
-/* FAQ */
 .faq-list{max-width:720px;margin:40px auto 0;display:flex;flex-direction:column;gap:12px}
 .faq-item{background:var(--white);border-radius:14px;border:1px solid var(--light-gray);overflow:hidden}
 .faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 24px;background:none;border:none;font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--navy);cursor:pointer;text-align:left}
-.faq-q:hover{color:var(--blue)}
-.faq-q .chv{font-size:1.2rem;transition:transform .3s;color:var(--gray)}
+.faq-q:hover{color:var(--blue)}.faq-q .chv{font-size:1.2rem;transition:transform .3s;color:var(--gray)}
 .faq-item.open .faq-q .chv{transform:rotate(180deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
 .faq-item.open .faq-a{max-height:300px}
 .faq-a-inner{padding:0 24px 20px;font-size:.9rem;color:var(--gray);line-height:1.7}
-
-/* CTA */
 .cta-banner{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;text-align:center;padding:80px 24px;position:relative;overflow:hidden}
 .cta-banner::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:500px;height:500px;background:radial-gradient(circle,rgba(0,180,216,.12),transparent 70%);border-radius:50%}
 .cta-banner h2{font-family:var(--font-display);font-size:2.4rem;margin-bottom:16px;position:relative}
 .cta-banner p{color:rgba(255,255,255,.7);font-size:1.05rem;margin-bottom:32px;position:relative}
 .cta-buttons{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;position:relative}
-
-/* PAGE HERO (subpages) */
 .page-hero{background:linear-gradient(135deg,var(--navy) 0%,#162D54 50%,var(--blue) 100%);color:#fff;padding:80px 24px 60px;position:relative;overflow:hidden;text-align:center}
 .page-hero::before{content:'';position:absolute;top:-50%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(0,180,216,.12) 0%,transparent 70%);border-radius:50%}
 .page-hero h1{font-family:var(--font-display);font-size:2.8rem;font-weight:800;margin-bottom:16px;position:relative}
@@ -152,13 +127,10 @@ section{padding:80px 24px}
 .split-visual{background:linear-gradient(135deg,var(--navy),var(--blue));border-radius:20px;padding:48px;color:#fff;position:relative;overflow:hidden}
 .split-visual::before{content:'';position:absolute;top:-40px;right:-40px;width:200px;height:200px;background:radial-gradient(circle,rgba(0,180,216,.2),transparent 70%);border-radius:50%}
 .split-visual h3{font-family:var(--font-display);font-size:1.5rem;margin-bottom:12px;position:relative}
-.split-visual p{color:rgba(255,255,255,.7);line-height:1.7;position:relative}
 .highlight-list{list-style:none;margin-top:20px;position:relative}
 .highlight-list li{padding:8px 0;display:flex;align-items:center;gap:10px;color:rgba(255,255,255,.85);font-size:.9rem}
 .highlight-list li::before{content:'✓';color:var(--teal);font-weight:700}
 .split-image{border-radius:20px;overflow:hidden}.split-image img{width:100%;height:100%;object-fit:cover;min-height:360px}
-
-/* CONTACT */
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:40px}
 .contact-form{background:var(--white);border:1px solid var(--light-gray);border-radius:16px;padding:36px}
 .contact-form label{display:block;font-size:.85rem;font-weight:600;margin-bottom:6px;margin-top:16px}
@@ -181,8 +153,6 @@ section{padding:80px 24px}
 .invoice-form input:focus{outline:none;border-color:var(--teal);background:var(--white)}
 .invoice-form .btn{margin-top:24px;width:100%;justify-content:center}
 .amount-input{position:relative}.amount-input::before{content:'€';position:absolute;left:16px;top:50%;transform:translateY(-50%);font-weight:600;color:var(--gray)}.amount-input input{padding-left:32px}
-
-/* FLOATING */
 .floating-buttons{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:12px;z-index:999}
 .fab{width:56px;height:56px;border-radius:50%;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1.5rem;box-shadow:0 4px 16px rgba(0,0,0,.15);transition:all .3s;text-decoration:none}
 .fab:hover{transform:scale(1.1);box-shadow:0 6px 24px rgba(0,0,0,.2)}
@@ -192,7 +162,7 @@ section{padding:80px 24px}
 @keyframes slideUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .chat-header{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
 .chat-header h3{font-size:1rem;font-weight:700}.chat-header p{font-size:.78rem;color:rgba(255,255,255,.6);margin-top:2px}
-.chat-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:1.3rem;cursor:pointer;padding:4px}.chat-close:hover{color:white}
+.chat-close{background:none;border:none;color:rgba(255,255,255,.6);font-size:1.3rem;cursor:pointer}.chat-close:hover{color:white}
 .chat-body{flex:1;padding:20px;overflow-y:auto;display:flex;flex-direction:column;gap:12px}
 .chat-msg{max-width:85%;padding:12px 16px;border-radius:14px;font-size:.88rem;line-height:1.5}
 .chat-msg.bot{background:var(--off-white);color:var(--navy);align-self:flex-start;border-bottom-left-radius:4px}
@@ -203,10 +173,7 @@ section{padding:80px 24px}
 .chat-footer{padding:16px 20px;border-top:1px solid var(--light-gray);display:flex;gap:8px}
 .chat-footer input{flex:1;padding:10px 14px;border:1px solid var(--light-gray);border-radius:10px;font-family:var(--font-body);font-size:.88rem}
 .chat-footer input:focus{outline:none;border-color:var(--teal)}
-.chat-footer button{padding:10px 16px;background:var(--blue);color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;font-family:var(--font-body);font-size:.88rem}
-.chat-footer button:hover{background:var(--navy)}
-
-/* FOOTER */
+.chat-footer button{padding:10px 16px;background:var(--blue);color:white;border:none;border-radius:10px;font-weight:600;cursor:pointer;font-family:var(--font-body)}
 footer{background:var(--navy);color:rgba(255,255,255,.65);padding:60px 24px 32px}
 .footer-inner{max-width:1200px;margin:0 auto}
 .footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -216,399 +183,334 @@ footer ul{list-style:none}footer li{margin-bottom:10px}
 footer a{color:rgba(255,255,255,.6);text-decoration:none;font-size:.88rem;transition:color .2s;cursor:pointer}footer a:hover{color:var(--teal)}
 .footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;font-size:.8rem}
 .fade-up{opacity:0;transform:translateY(24px);transition:all .6s cubic-bezier(.16,1,.3,1)}.fade-up.visible{opacity:1;transform:translateY(0)}
-
 @media(max-width:1024px){
-  .hero-inner{grid-template-columns:1fr}.hero-card{display:none}.hero h1{font-size:2.6rem}
-  .services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.split-section,.contact-grid{grid-template-columns:1fr}
-  .features-grid{grid-template-columns:1fr}
-  .footer-grid{grid-template-columns:1fr 1fr}
-  .about-img img{min-height:300px}
+.hero-inner{grid-template-columns:1fr}.hero-card{display:none}.hero h1{font-size:2.6rem}
+.services-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.split-section,.contact-grid,.features-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr 1fr}.about-img img{min-height:300px}
 }
 @media(max-width:768px){
-  /* NAV */
-  nav{display:none}.hamburger{display:block}
-  nav.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--white);padding:16px 24px;border-bottom:1px solid var(--light-gray);box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:99}
-  nav.open .nav-dropdown .dropdown-menu{display:block;position:static;box-shadow:none;border:none;padding-left:16px}
-  nav.open .nav-dropdown>a::after{content:' ▸'}
-  /* HERO */
-  .hero{min-height:auto;padding:60px 20px 50px}
-  .hero h1{font-size:1.85rem;line-height:1.2}
-  .hero-text{font-size:.95rem;margin-bottom:24px}
-  .hero-buttons{flex-direction:column;gap:10px}
-  .hero-buttons .btn{width:100%;justify-content:center;padding:14px 20px}
-  .hero-stats{flex-direction:row;gap:0;justify-content:space-between}
-  .hero-stat{text-align:center;flex:1}
-  .hero-stat strong{font-size:1.3rem}
-  .hero-stat span{font-size:.72rem}
-  /* SECTIONS */
-  section{padding:50px 16px}
-  .section-title{font-size:1.6rem}
-  .section-subtitle{font-size:.92rem}
-  .page-hero{padding:50px 16px 40px}
-  .page-hero h1{font-size:1.7rem}
-  .page-hero p{font-size:.92rem}
-  .page-hero .breadcrumb{font-size:.78rem}
-  /* SERVICES */
-  .services-grid{grid-template-columns:1fr;gap:16px;margin-top:32px}
-  .service-img{height:140px;font-size:2.8rem}
-  .service-body{padding:20px}
-  .service-body h3{font-size:1rem}
-  .service-body p{font-size:.82rem}
-  /* CAROUSEL */
-  .carousel-heading{padding:36px 16px 0}
-  .carousel-heading h2{font-size:1.5rem}
-  .carousel-slide{width:260px;height:180px}
-  /* ABOUT */
-  .about-grid{gap:32px;margin-top:32px}
-  .about-feature{padding:16px;gap:12px}
-  .af-icon{width:40px;height:40px;font-size:1.1rem}
-  .about-feature h4{font-size:.92rem}
-  .about-feature p{font-size:.8rem}
-  .about-img img{min-height:250px}
-  .about-img .img-badge{font-size:.78rem;padding:10px 14px;bottom:12px;left:12px}
-  /* FAQ */
-  .faq-q{padding:16px 20px;font-size:.9rem}
-  .faq-a-inner{padding:0 20px 16px;font-size:.84rem}
-  /* CTA */
-  .cta-banner{padding:50px 16px}
-  .cta-banner h2{font-size:1.6rem}
-  .cta-banner p{font-size:.92rem;margin-bottom:24px}
-  .cta-buttons{flex-direction:column;align-items:center;gap:10px}
-  .cta-buttons .btn{width:100%;max-width:300px;justify-content:center}
-  /* CONTACT */
-  .contact-grid{gap:32px;margin-top:24px}
-  .contact-form{padding:24px}
-  .contact-form input,.contact-form textarea,.contact-form select{padding:11px 14px;font-size:.88rem}
-  .contact-card{padding:16px;gap:12px}
-  .cc-icon{width:40px;height:40px;font-size:1.1rem}
-  /* INVOICE */
-  .invoice-form{padding:24px}
-  /* FEATURES */
-  .feature-card{padding:18px;gap:12px}
-  .feature-icon{width:40px;height:40px;font-size:1.1rem}
-  .feature-card h3{font-size:.9rem}
-  .feature-card p{font-size:.82rem}
-  /* SPLIT */
-  .split-section{gap:32px}
-  .split-visual{padding:32px}
-  .split-visual h3{font-size:1.25rem}
-  .split-image img{min-height:250px}
-  /* FOOTER */
-  .top-bar-inner{justify-content:center;text-align:center}
-  .top-bar-inner>div:last-child{display:none}
-  .footer-grid{grid-template-columns:1fr;gap:28px}
-  .footer-bottom{flex-direction:column;gap:8px;text-align:center}
-  /* FLOATING */
-  .floating-buttons{bottom:16px;right:16px;gap:10px}
-  .fab{width:50px;height:50px;font-size:1.3rem}
-  .chat-widget{width:calc(100vw - 24px);right:12px;bottom:82px;max-height:420px;border-radius:16px}
-  .chat-header{padding:16px 20px}
-  .chat-body{padding:16px}
-  .chat-options{padding:0 16px 12px}
-  .chat-footer{padding:12px 16px}
+nav{display:none}.hamburger{display:block}
+nav.open{display:flex;flex-direction:column;position:absolute;top:72px;left:0;right:0;background:var(--white);padding:16px 24px;border-bottom:1px solid var(--light-gray);box-shadow:0 8px 24px rgba(0,0,0,.08);z-index:99}
+nav.open .nav-dropdown .dropdown-menu{display:block;position:static;box-shadow:none;border:none;padding-left:16px}
+.hero{min-height:auto;padding:60px 20px 50px}.hero h1{font-size:1.85rem;line-height:1.2}
+.hero-text{font-size:.95rem;margin-bottom:24px}
+.hero-buttons{flex-direction:column;gap:10px}.hero-buttons .btn{width:100%;justify-content:center;padding:14px 20px}
+.hero-stats{flex-direction:row;gap:0;justify-content:space-between}.hero-stat{text-align:center;flex:1}.hero-stat strong{font-size:1.3rem}.hero-stat span{font-size:.72rem}
+section{padding:50px 16px}.section-title{font-size:1.6rem}.section-subtitle{font-size:.92rem}
+.page-hero{padding:50px 16px 40px}.page-hero h1{font-size:1.7rem}.page-hero p{font-size:.92rem}
+.services-grid{grid-template-columns:1fr;gap:16px;margin-top:32px}.service-img{height:140px;font-size:2.8rem}.service-body{padding:20px}.service-body h3{font-size:1rem}.service-body p{font-size:.82rem}
+.carousel-heading{padding:36px 16px 0}.carousel-heading h2{font-size:1.5rem}.carousel-slide{width:260px;height:180px}
+.about-grid{gap:32px;margin-top:32px}.about-feature{padding:16px;gap:12px}.af-icon{width:40px;height:40px;font-size:1.1rem}
+.about-img img{min-height:250px}.about-img .img-badge{font-size:.78rem;padding:10px 14px;bottom:12px;left:12px}
+.faq-q{padding:16px 20px;font-size:.9rem}.faq-a-inner{padding:0 20px 16px;font-size:.84rem}
+.cta-banner{padding:50px 16px}.cta-banner h2{font-size:1.6rem}.cta-banner p{font-size:.92rem;margin-bottom:24px}
+.cta-buttons{flex-direction:column;align-items:center;gap:10px}.cta-buttons .btn{width:100%;max-width:300px;justify-content:center}
+.contact-grid{gap:32px;margin-top:24px}.contact-form{padding:24px}.contact-card{padding:16px;gap:12px}.cc-icon{width:40px;height:40px;font-size:1.1rem}
+.invoice-form{padding:24px}.feature-card{padding:18px;gap:12px}.feature-icon{width:40px;height:40px;font-size:1.1rem}
+.split-section{gap:32px}.split-visual{padding:32px}.split-image img{min-height:250px}
+.top-bar-inner{justify-content:center}.top-bar-inner>div:last-child{display:none}
+.footer-grid{grid-template-columns:1fr;gap:28px}.footer-bottom{flex-direction:column;gap:8px;text-align:center}
+.floating-buttons{bottom:16px;right:16px;gap:10px}.fab{width:50px;height:50px;font-size:1.3rem}
+.chat-widget{width:calc(100vw - 24px);right:12px;bottom:82px;max-height:420px;border-radius:16px}
 }
 @media(max-width:380px){
-  .hero h1{font-size:1.6rem}
-  .hero-badge{font-size:.72rem;padding:5px 12px}
-  .btn{padding:12px 20px;font-size:.88rem}
-  .hero-stats{flex-wrap:wrap;gap:8px}
-  .hero-stat{flex:none;width:calc(33% - 6px)}
-  .section-title{font-size:1.4rem}
-  .logo{font-size:1.2rem}
-  .logo-icon{width:34px;height:34px;font-size:.95rem}
+.hero h1{font-size:1.6rem}.hero-badge{font-size:.72rem;padding:5px 12px}
+.btn{padding:12px 20px;font-size:.88rem}.section-title{font-size:1.4rem}
+.logo{font-size:1.2rem}.logo-icon{width:34px;height:34px;font-size:.95rem}
 }
 </style>
 </head>
 <body>
 
 <div class="top-bar"><div class="top-bar-inner">
-  <div class="top-bar-left"><span>📍 Mount Mungret, Mungret, Co. Limerick</span><span>🕐 Mon - Fri: 9:00 - 5:30</span></div>
-  <div><a href="tel:061226227">061 226 227</a> &nbsp;|&nbsp; <a href="tel:0879277577">087 927 7577</a> &nbsp;|&nbsp; <a href="mailto:info@atlanticloohire.ie">info@atlanticloohire.ie</a></div>
+<div class="top-bar-left"><span>📍 Mount Mungret, Mungret, Co. Limerick</span><span>🕐 Mon - Fri: 9:00 - 5:30</span></div>
+<div><a href="tel:061226227">061 226 227</a> &nbsp;|&nbsp; <a href="tel:0879277577">087 927 7577</a> &nbsp;|&nbsp; <a class="eml" data-u="info" data-d="atlanticloohire.ie">loading...</a></div>
 </div></div>
 
 <header><div class="header-inner">
-  <a class="logo" onclick="navigate('home')"><div class="logo-icon">🚽</div>Atlantic Loo Hire</a>
-  <nav id="mainNav">
-    <a onclick="navigate('home')">Home</a>
-    <div class="nav-dropdown"><a>Services</a><div class="dropdown-menu">
-      <a onclick="navigate('work-site-loo')">Work Site Loo</a><a onclick="navigate('country-classic-loo')">Country Classic Loo</a>
-      <a onclick="navigate('urinal-pods')">Urinal Pods</a><a onclick="navigate('wheelchair-accessible-loo')">Wheelchair Accessible Loo</a>
-      <a onclick="navigate('effluent-holding-tanks')">Effluent Holding Tanks</a>
-    </div></div>
-    <div class="nav-dropdown"><a>Areas</a><div class="dropdown-menu">
-      <a onclick="navigate('area-limerick')">Limerick</a><a onclick="navigate('area-cork')">Cork</a>
-      <a onclick="navigate('area-kerry')">Kerry</a><a onclick="navigate('area-clare')">Clare</a>
-      <a onclick="navigate('area-ireland')">Nationwide</a>
-    </div></div>
-    <a onclick="navigate('pay-invoice')">Pay Invoice</a>
-    <a class="nav-cta" onclick="navigate('contact')">Get a Free Quote</a>
-  </nav>
-  <button class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
+<a class="logo" onclick="navigate('home')"><div class="logo-icon">🚽</div>Atlantic Loo Hire</a>
+<nav id="mainNav">
+  <a onclick="navigate('home')">Home</a>
+  <div class="nav-dropdown"><a>Services</a><div class="dropdown-menu">
+    <a onclick="navigate('work-site-loo')">Work Site Loo</a><a onclick="navigate('country-classic-loo')">Country Classic Loo</a>
+    <a onclick="navigate('urinal-pods')">Urinal Pods</a><a onclick="navigate('wheelchair-accessible-loo')">Wheelchair Accessible Loo</a>
+    <a onclick="navigate('effluent-holding-tanks')">Effluent Holding Tanks</a>
+  </div></div>
+  <div class="nav-dropdown"><a>Areas</a><div class="dropdown-menu">
+    <a onclick="navigate('area-limerick')">Limerick</a><a onclick="navigate('area-cork')">Cork</a>
+    <a onclick="navigate('area-kerry')">Kerry</a><a onclick="navigate('area-clare')">Clare</a>
+    <a onclick="navigate('area-ireland')">Nationwide</a>
+  </div></div>
+  <a onclick="navigate('pay-invoice')">Pay Invoice</a>
+  <a class="nav-cta" onclick="navigate('contact')">Get a Free Quote</a>
+</nav>
+<button class="hamburger" onclick="document.getElementById('mainNav').classList.toggle('open')" aria-label="Menu"><span></span><span></span><span></span></button>
 </div></header>
 
-<!-- ====== HOME ====== -->
 <div class="page active" id="page-home">
-
 <section class="hero">
-  <div class="hero-bg"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire portable toilets"></div>
-  <div class="hero-inner">
-    <div>
-      <div class="hero-badge"><span class="dot"></span> Serving Munster &amp; Nationwide</div>
-      <h1>Portable Toilet Hire You Can <em>Rely On</em></h1>
-      <p class="hero-text">From construction sites to corporate events, Atlantic Loo Hire delivers clean, reliable sanitation solutions across Limerick, Clare, Cork, Kerry, Galway, Tipperary and beyond.</p>
-      <div class="hero-buttons">
-        <a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a>
-        <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
-        <a href="tel:061226227" class="btn btn-outline">📞 061 226 227</a>
-      </div>
-      <div class="hero-stats">
-        <div class="hero-stat"><strong>6+</strong><span>Counties Covered</span></div>
-        <div class="hero-stat"><strong>100%</strong><span>Delivery &amp; Collection</span></div>
-        <div class="hero-stat"><strong>24hr</strong><span>Turnaround Available</span></div>
-      </div>
+<div class="hero-bg"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire portable toilets"></div>
+<div class="hero-inner">
+  <div>
+    <div class="hero-badge"><span class="dot"></span> Serving Munster &amp; Nationwide</div>
+    <h1>Portable Toilet Hire You Can <em>Rely On</em></h1>
+    <p class="hero-text">From construction sites to corporate events, Atlantic Loo Hire delivers clean, reliable sanitation solutions across Limerick, Clare, Cork, Kerry, Galway, Tipperary and beyond.</p>
+    <div class="hero-buttons">
+      <a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a>
+      <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
+      <a href="tel:061226227" class="btn btn-outline">📞 061 226 227</a>
     </div>
-    <div class="hero-card">
-      <h3>Our Solutions</h3>
-      <div class="hero-card-items">
-        <a class="hero-card-item" onclick="navigate('work-site-loo')"><div class="hc-icon" style="background:rgba(0,180,216,.15);color:var(--teal)">🏗️</div><div><h4>Work Site Loos</h4><p>Built tough for construction</p></div></a>
-        <a class="hero-card-item" onclick="navigate('country-classic-loo')"><div class="hc-icon" style="background:rgba(34,197,94,.15);color:var(--green)">🎉</div><div><h4>Event Toilets</h4><p>Premium units for any occasion</p></div></a>
-        <a class="hero-card-item" onclick="navigate('wheelchair-accessible-loo')"><div class="hc-icon" style="background:rgba(139,92,246,.15);color:#A78BFA">♿</div><div><h4>Accessible Units</h4><p>Wheelchair-friendly options</p></div></a>
-        <a class="hero-card-item" onclick="navigate('effluent-holding-tanks')"><div class="hc-icon" style="background:rgba(234,179,8,.15);color:#EAB308">🛢️</div><div><h4>Holding Tanks &amp; Servicing</h4><p>1,000L to 2,500L options</p></div></a>
-      </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>6+</strong><span>Counties Covered</span></div>
+      <div class="hero-stat"><strong>100%</strong><span>Delivery &amp; Collection</span></div>
+      <div class="hero-stat"><strong>24hr</strong><span>Turnaround Available</span></div>
     </div>
   </div>
+  <div class="hero-card">
+    <h3>Our Solutions</h3>
+    <div class="hero-card-items">
+      <a class="hero-card-item" onclick="navigate('work-site-loo')"><div class="hc-icon" style="background:rgba(0,180,216,.15);color:var(--teal)">🏗️</div><div><h4>Work Site Loos</h4><p>Built tough for construction</p></div></a>
+      <a class="hero-card-item" onclick="navigate('country-classic-loo')"><div class="hc-icon" style="background:rgba(34,197,94,.15);color:var(--green)">🎉</div><div><h4>Event Toilets</h4><p>Premium units for any occasion</p></div></a>
+      <a class="hero-card-item" onclick="navigate('wheelchair-accessible-loo')"><div class="hc-icon" style="background:rgba(139,92,246,.15);color:#A78BFA">♿</div><div><h4>Accessible Units</h4><p>Wheelchair-friendly options</p></div></a>
+      <a class="hero-card-item" onclick="navigate('effluent-holding-tanks')"><div class="hc-icon" style="background:rgba(234,179,8,.15);color:#EAB308">🛢️</div><div><h4>Holding Tanks &amp; Servicing</h4><p>1,000L to 2,500L options</p></div></a>
+    </div>
+  </div>
+</div>
 </section>
 
 <section class="bg-alt"><div class="section-inner">
-  <div class="section-label">What We Offer</div>
-  <h2 class="section-title">Our Portable Toilet Range</h2>
-  <p class="section-subtitle">Quality sanitation solutions for every setting, from demanding construction sites to elegant outdoor events.</p>
-  <div class="services-grid">
-    <div class="service-card fade-up" onclick="navigate('work-site-loo')"><div class="service-img" style="background:linear-gradient(135deg,#1B4B8F,#0B1D3A)">🏗️</div><div class="service-body"><h3>Work Site Loo</h3><p>Self-contained with recirculating flush, hand pump, and wash basin. Built for tough conditions.</p><span class="service-link">Learn more →</span></div></div>
-    <div class="service-card fade-up" onclick="navigate('country-classic-loo')"><div class="service-img" style="background:linear-gradient(135deg,#22C55E,#15803D)">🌿</div><div class="service-body"><h3>Country Classic Loo</h3><p>Self-sanitising with premium aesthetics. Double insulated. Ideal for weddings and events.</p><span class="service-link">Learn more →</span></div></div>
-    <div class="service-card fade-up" onclick="navigate('urinal-pods')"><div class="service-img" style="background:linear-gradient(135deg,#3A8FD6,#1B4B8F)">🚹</div><div class="service-body"><h3>Urinal Pods</h3><p>Space-saving units that minimise wait times. Perfect for concerts and festivals.</p><span class="service-link">Learn more →</span></div></div>
-    <div class="service-card fade-up" onclick="navigate('wheelchair-accessible-loo')"><div class="service-img" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">♿</div><div class="service-body"><h3>Wheelchair Accessible Loo</h3><p>Spacious with wide doorway, hand rails, and ample room.</p><span class="service-link">Learn more →</span></div></div>
-    <div class="service-card fade-up" onclick="navigate('effluent-holding-tanks')"><div class="service-img" style="background:linear-gradient(135deg,#EAB308,#CA8A04)">🛢️</div><div class="service-body"><h3>Effluent Holding Tanks</h3><p>Steel and plastic, 1,000L to 2,500L. Ideal without sewer connections.</p><span class="service-link">Learn more →</span></div></div>
-    <div class="service-card fade-up" onclick="navigate('contact')"><div class="service-img" style="background:linear-gradient(135deg,#F97316,#EA580C)">🔧</div><div class="service-body"><h3>Tank Servicing</h3><p>Specialised vacuum pump servicing. Also for customer-owned tanks across Munster.</p><span class="service-link">Learn more →</span></div></div>
-  </div>
+<div class="section-label">What We Offer</div>
+<h2 class="section-title">Our Portable Toilet Range</h2>
+<p class="section-subtitle">Quality sanitation solutions for every setting, from demanding construction sites to elegant outdoor events.</p>
+<div class="services-grid">
+  <div class="service-card fade-up" onclick="navigate('work-site-loo')"><div class="service-img" style="background:linear-gradient(135deg,#1B4B8F,#0B1D3A)">🏗️</div><div class="service-body"><h3>Work Site Loo</h3><p>Self-contained with recirculating flush, hand pump, and wash basin. Built for tough conditions.</p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('country-classic-loo')"><div class="service-img" style="background:linear-gradient(135deg,#22C55E,#15803D)">🌿</div><div class="service-body"><h3>Country Classic Loo</h3><p>Self-sanitising with premium aesthetics. Double insulated. Ideal for weddings and events.</p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('urinal-pods')"><div class="service-img" style="background:linear-gradient(135deg,#3A8FD6,#1B4B8F)">🚹</div><div class="service-body"><h3>Urinal Pods</h3><p>Space-saving units that minimise wait times. Perfect for concerts and festivals.</p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('wheelchair-accessible-loo')"><div class="service-img" style="background:linear-gradient(135deg,#8B5CF6,#6D28D9)">♿</div><div class="service-body"><h3>Wheelchair Accessible Loo</h3><p>Spacious with wide doorway, hand rails, and ample room.</p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('effluent-holding-tanks')"><div class="service-img" style="background:linear-gradient(135deg,#EAB308,#CA8A04)">🛢️</div><div class="service-body"><h3>Effluent Holding Tanks</h3><p>Steel and plastic, 1,000L to 2,500L. Ideal without sewer connections.</p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('contact')"><div class="service-img" style="background:linear-gradient(135deg,#F97316,#EA580C)">🔧</div><div class="service-body"><h3>Tank Servicing</h3><p>Specialised vacuum pump servicing. Also for customer-owned tanks across Munster.</p><span class="service-link">Learn more →</span></div></div>
+</div>
 </div></section>
 
-<!-- PHOTO CAROUSEL -->
 <div class="carousel-heading"><h2>Our Fleet in Action</h2><p>Clean, reliable units delivered across Munster and nationwide</p></div>
 <section class="carousel-section"><div class="carousel-track-wrapper"><div class="carousel-track">
-  <div class="carousel-slide"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire fleet"><div class="slide-label">Atlantic Loo Hire Fleet</div></div>
-  <div class="carousel-slide"><img src="images/event-loos.jpg" alt="Country Classic event loos"><div class="slide-label">Country Classic Loos</div></div>
-  <div class="carousel-slide"><img src="images/work-site-loo.jpg" alt="Work site portable toilets"><div class="slide-label">Work Site Loos</div></div>
-  <div class="carousel-slide"><img src="images/service-tank.jpg" alt="Effluent service tank"><div class="slide-label">Effluent Tank Servicing</div></div>
-  <div class="carousel-slide"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire fleet"><div class="slide-label">Atlantic Loo Hire Fleet</div></div>
-  <div class="carousel-slide"><img src="images/event-loos.jpg" alt="Country Classic event loos"><div class="slide-label">Country Classic Loos</div></div>
-  <div class="carousel-slide"><img src="images/work-site-loo.jpg" alt="Work site portable toilets"><div class="slide-label">Work Site Loos</div></div>
-  <div class="carousel-slide"><img src="images/service-tank.jpg" alt="Effluent service tank"><div class="slide-label">Effluent Tank Servicing</div></div>
+<div class="carousel-slide"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire fleet"><div class="slide-label">Atlantic Loo Hire Fleet</div></div>
+<div class="carousel-slide"><img src="images/event-loos.jpg" alt="Country Classic event loos"><div class="slide-label">Country Classic Loos</div></div>
+<div class="carousel-slide"><img src="images/work-site-loo.jpg" alt="Work site portable toilets"><div class="slide-label">Work Site Loos</div></div>
+<div class="carousel-slide"><img src="images/service-tank.jpg" alt="Effluent service tank"><div class="slide-label">Effluent Tank Servicing</div></div>
+<div class="carousel-slide"><img src="images/green-loos.jpg" alt="Atlantic Loo Hire fleet"><div class="slide-label">Atlantic Loo Hire Fleet</div></div>
+<div class="carousel-slide"><img src="images/event-loos.jpg" alt="Country Classic event loos"><div class="slide-label">Country Classic Loos</div></div>
+<div class="carousel-slide"><img src="images/work-site-loo.jpg" alt="Work site portable toilets"><div class="slide-label">Work Site Loos</div></div>
+<div class="carousel-slide"><img src="images/service-tank.jpg" alt="Effluent service tank"><div class="slide-label">Effluent Tank Servicing</div></div>
 </div></div></section>
 
 <section><div class="section-inner">
-  <div class="section-label">Why Choose Us</div>
-  <h2 class="section-title">Limerick's Trusted Sanitation Partner</h2>
-  <div class="about-grid">
-    <div class="about-features">
-      <div class="about-feature fade-up"><div class="af-icon">🚚</div><div><h4>Full Delivery &amp; Collection</h4><p>We handle everything from drop-off to pick-up.</p></div></div>
-      <div class="about-feature fade-up"><div class="af-icon">✨</div><div><h4>Clean &amp; Hygienic</h4><p>Every unit cleaned and sanitised before delivery.</p></div></div>
-      <div class="about-feature fade-up"><div class="af-icon">🗺️</div><div><h4>Nationwide Coverage</h4><p>Based in Limerick, serving all of Munster and beyond.</p></div></div>
-      <div class="about-feature fade-up"><div class="af-icon">💬</div><div><h4>Personal Service</h4><p>Speak directly with our team. No call centres.</p></div></div>
-    </div>
-    <div class="about-img fade-up">
-      <img src="images/event-loos.jpg" alt="Atlantic Loo Hire Country Classic Loos">
-      <div class="img-badge">📍 Serving Limerick, Cork, Kerry, Clare, Galway &amp; more</div>
-    </div>
+<div class="section-label">Why Choose Us</div>
+<h2 class="section-title">Limerick's Trusted Sanitation Partner</h2>
+<div class="about-grid">
+  <div class="about-features">
+    <div class="about-feature fade-up"><div class="af-icon">🚚</div><div><h4>Full Delivery &amp; Collection</h4><p>We handle everything from drop-off to pick-up.</p></div></div>
+    <div class="about-feature fade-up"><div class="af-icon">✨</div><div><h4>Clean &amp; Hygienic</h4><p>Every unit cleaned and sanitised before delivery.</p></div></div>
+    <div class="about-feature fade-up"><div class="af-icon">🗺️</div><div><h4>Nationwide Coverage</h4><p>Based in Limerick, serving all of Munster and beyond.</p></div></div>
+    <div class="about-feature fade-up"><div class="af-icon">💬</div><div><h4>Personal Service</h4><p>Speak directly with our team. No call centres.</p></div></div>
   </div>
+  <div class="about-img fade-up"><img src="images/event-loos.jpg" alt="Atlantic Loo Hire"><div class="img-badge">📍 Serving Limerick, Cork, Kerry, Clare, Galway &amp; more</div></div>
+</div>
 </div></section>
 
 <section class="bg-alt"><div class="section-inner" style="text-align:center">
-  <div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title">Common Questions</h2>
+<div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title">Common Questions</h2>
 </div><div class="faq-list">
-  <div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where do you provide portable loo hire?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Throughout Limerick, Clare, Cork, Kerry, Galway, Tipperary, Kilkenny, and nationwide for larger events.</div></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What types of portable loos do you offer?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Work Site Loos, Country Classic Loos, Urinal Pods, Wheelchair Accessible Toilets, Effluent Holding Tanks, and tank servicing.</div></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you deliver and collect?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Yes. Full delivery and collection for all products.</div></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Which loo is best for weddings?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">The Country Classic Loo. Aesthetically pleasing, self-sanitising, double insulated.</div></div></div>
-  <div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can you service our own holding tanks?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. Vacuum pump servicing for customer-owned tanks across Munster.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Where do you provide portable loo hire?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Throughout Limerick, Clare, Cork, Kerry, Galway, Tipperary, Kilkenny, and nationwide for larger events.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What types of portable loos do you offer?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Work Site Loos, Country Classic Loos, Urinal Pods, Wheelchair Accessible Toilets, Effluent Holding Tanks, and tank servicing.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you deliver and collect?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Yes. Full delivery and collection for all products.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Which loo is best for weddings?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">The Country Classic Loo. Aesthetically pleasing, self-sanitising, double insulated.</div></div></div>
+<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can you service our own holding tanks?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Absolutely. Vacuum pump servicing for customer-owned tanks across Munster.</div></div></div>
 </div></section>
 </div>
 
-<!-- SERVICE TEMPLATE -->
 <div class="page" id="page-service">
-  <section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span id="svc-bc"></span></div><h1 id="svc-title"></h1><p id="svc-desc"></p><div style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a></div></section>
-  <section><div class="section-inner"><div class="section-label">Key Features</div><h2 class="section-title" id="svc-feat-title"></h2><div class="features-grid" id="svc-features"></div></div></section>
-  <section class="bg-alt"><div class="section-inner"><div class="split-section"><div><div class="section-label">Why Choose Us</div><h2 id="svc-why-title" style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:16px"></h2><p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Years of experience across Munster and nationwide.</p><a class="btn btn-blue" onclick="navigate('contact')">Contact Us →</a></div><div class="split-visual"><div id="svc-emoji" style="font-size:4rem;margin-bottom:16px"></div><h3>What You Get</h3><ul class="highlight-list" id="svc-highlights"></ul></div></div></div></section>
-  <section><div class="section-inner" style="text-align:center"><div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title" id="svc-faq-title"></h2></div><div class="faq-list" id="svc-faq"></div></section>
+<section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span id="svc-bc"></span></div><h1 id="svc-title"></h1><p id="svc-desc"></p><div style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a></div></section>
+<section><div class="section-inner"><div class="section-label">Key Features</div><h2 class="section-title" id="svc-feat-title"></h2><div class="features-grid" id="svc-features"></div></div></section>
+<section class="bg-alt"><div class="section-inner"><div class="split-section"><div><div class="section-label">Why Choose Us</div><h2 id="svc-why-title" style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:16px"></h2><p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Years of experience across Munster and nationwide.</p><a class="btn btn-blue" onclick="navigate('contact')">Contact Us →</a></div><div class="split-visual"><div id="svc-emoji" style="font-size:4rem;margin-bottom:16px"></div><h3>What You Get</h3><ul class="highlight-list" id="svc-highlights"></ul></div></div></div></section>
+<section><div class="section-inner" style="text-align:center"><div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title" id="svc-faq-title"></h2></div><div class="faq-list" id="svc-faq"></div></section>
 </div>
 
-<!-- AREA TEMPLATE -->
 <div class="page" id="page-area">
-  <section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span id="area-bc"></span></div><h1 id="area-title"></h1><p id="area-desc"></p><div style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a></div></section>
-  <section><div class="section-inner"><div class="section-label" id="area-label"></div><h2 class="section-title" id="area-offer-title"></h2><p class="section-subtitle" style="margin-bottom:40px">High-quality portable toilets with hand sanitiser, ventilation, and non-slip flooring.</p>
-    <div class="services-grid">
-      <div class="service-card fade-up" onclick="navigate('work-site-loo')"><div class="service-img" style="background:linear-gradient(135deg,#1B4B8F,#0B1D3A)">🏗️</div><div class="service-body"><h3>Work Site Loo</h3><p id="area-svc1"></p><span class="service-link">Learn more →</span></div></div>
-      <div class="service-card fade-up" onclick="navigate('country-classic-loo')"><div class="service-img" style="background:linear-gradient(135deg,#22C55E,#15803D)">🌿</div><div class="service-body"><h3>Country Classic Loo</h3><p id="area-svc2"></p><span class="service-link">Learn more →</span></div></div>
-      <div class="service-card fade-up" onclick="navigate('urinal-pods')"><div class="service-img" style="background:linear-gradient(135deg,#3A8FD6,#1B4B8F)">🚹</div><div class="service-body"><h3>Urinal Pods</h3><p id="area-svc3"></p><span class="service-link">Learn more →</span></div></div>
-    </div>
-  </div></section>
-  <section class="bg-alt"><div class="section-inner"><div class="split-section"><div><div class="section-label" id="area-why-label"></div><h2 id="area-why-title" style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:16px"></h2><p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Competitive rates, no hidden fees, flexible hire terms.</p><a class="btn btn-blue" id="area-cta-btn" onclick="navigate('contact')"></a></div><div class="split-image fade-up"><img src="images/event-loos.jpg" alt="Portable toilet hire"></div></div></div></section>
-  <section><div class="section-inner" style="text-align:center"><div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title" id="area-faq-title"></h2></div><div class="faq-list" id="area-faq"></div></section>
+<section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span id="area-bc"></span></div><h1 id="area-title"></h1><p id="area-desc"></p><div style="margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-primary" onclick="navigate('contact')">Get a Free Quote →</a><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a></div></section>
+<section><div class="section-inner"><div class="section-label" id="area-label"></div><h2 class="section-title" id="area-offer-title"></h2><p class="section-subtitle" style="margin-bottom:40px">High-quality portable toilets with hand sanitiser, ventilation, and non-slip flooring.</p>
+<div class="services-grid">
+  <div class="service-card fade-up" onclick="navigate('work-site-loo')"><div class="service-img" style="background:linear-gradient(135deg,#1B4B8F,#0B1D3A)">🏗️</div><div class="service-body"><h3>Work Site Loo</h3><p id="area-svc1"></p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('country-classic-loo')"><div class="service-img" style="background:linear-gradient(135deg,#22C55E,#15803D)">🌿</div><div class="service-body"><h3>Country Classic Loo</h3><p id="area-svc2"></p><span class="service-link">Learn more →</span></div></div>
+  <div class="service-card fade-up" onclick="navigate('urinal-pods')"><div class="service-img" style="background:linear-gradient(135deg,#3A8FD6,#1B4B8F)">🚹</div><div class="service-body"><h3>Urinal Pods</h3><p id="area-svc3"></p><span class="service-link">Learn more →</span></div></div>
+</div>
+</div></section>
+<section class="bg-alt"><div class="section-inner"><div class="split-section"><div><div class="section-label" id="area-why-label"></div><h2 id="area-why-title" style="font-family:var(--font-display);font-size:2rem;font-weight:800;margin-bottom:16px"></h2><p style="color:var(--gray);line-height:1.7;margin-bottom:16px">Competitive rates, no hidden fees, flexible hire terms.</p><a class="btn btn-blue" id="area-cta-btn" onclick="navigate('contact')"></a></div><div class="split-image fade-up"><img src="images/event-loos.jpg" alt="Portable toilet hire"></div></div></div></section>
+<section><div class="section-inner" style="text-align:center"><div class="section-label" style="justify-content:center">FAQ</div><h2 class="section-title" id="area-faq-title"></h2></div><div class="faq-list" id="area-faq"></div></section>
 </div>
 
-<!-- CONTACT -->
 <div class="page" id="page-contact">
 <section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span>Contact Us</span></div><h1>Get a Free Quote</h1><p>Tell us what you need. No obligation, no hassle.</p></section>
 <section><div class="section-inner"><div class="contact-grid">
-  <div class="contact-form"><h3 style="font-size:1.2rem;margin-bottom:4px">Request a Quote</h3><p style="font-size:.85rem;color:var(--gray);margin-bottom:8px">Fill out the form and we'll be in touch.</p>
-    <label>Name *</label><input type="text" placeholder="Your full name">
-    <label>Email *</label><input type="email" placeholder="you@email.com">
-    <label>Phone</label><input type="tel" placeholder="Your phone number">
-    <label>Service Required</label><select><option value="">Select a service...</option><option>Work Site Loo</option><option>Country Classic Loo</option><option>Urinal Pods</option><option>Wheelchair Accessible Loo</option><option>Effluent Holding Tank</option><option>Tank Servicing</option><option>Other</option></select>
-    <label>Message *</label><textarea placeholder="Tell us about your event or project..."></textarea>
-    <button type="button" class="btn btn-primary">Send Message →</button>
-    <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp" style="margin-top:12px;width:100%;justify-content:center">💬 Or WhatsApp Us</a>
-  </div>
-  <div class="contact-info-cards">
-    <div class="contact-card"><div class="cc-icon">📞</div><div><h3>Phone</h3><p><a href="tel:061226227">061 226 227</a><br><a href="tel:0879277577">087 927 7577</a></p></div></div>
-    <div class="contact-card"><div class="cc-icon">💬</div><div><h3>WhatsApp</h3><p><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank">Message us on WhatsApp</a><br><span style="font-size:.8rem;color:var(--gray)">Usually replies within 30 mins</span></p></div></div>
-    <div class="contact-card"><div class="cc-icon">✉️</div><div><h3>Email</h3><p><a href="mailto:info@atlanticloohire.ie">info@atlanticloohire.ie</a><br><a href="mailto:charlie.curtin@atlanticloohire.ie">charlie.curtin@atlanticloohire.ie</a></p></div></div>
-    <div class="contact-card"><div class="cc-icon">📍</div><div><h3>Address</h3><p>Mount Mungret, Mungret, Co. Limerick</p></div></div>
-    <div class="contact-card"><div class="cc-icon">🕐</div><div><h3>Opening Hours</h3><p>Monday to Friday: 9:00 - 5:30</p></div></div>
-  </div>
+<div class="contact-form"><h3 style="font-size:1.2rem;margin-bottom:4px">Request a Quote</h3><p style="font-size:.85rem;color:var(--gray);margin-bottom:8px">Fill out the form and we'll be in touch.</p>
+  <label>Name *</label><input type="text" placeholder="Your full name">
+  <label>Email *</label><input type="email" placeholder="you@email.com">
+  <label>Phone</label><input type="tel" placeholder="Your phone number">
+  <label>Service Required</label><select><option value="">Select a service...</option><option>Work Site Loo</option><option>Country Classic Loo</option><option>Urinal Pods</option><option>Wheelchair Accessible Loo</option><option>Effluent Holding Tank</option><option>Tank Servicing</option><option>Other</option></select>
+  <label>Message *</label><textarea placeholder="Tell us about your event or project..."></textarea>
+  <button type="button" class="btn btn-primary">Send Message →</button>
+  <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp" style="margin-top:12px;width:100%;justify-content:center">💬 Or WhatsApp Us</a>
+</div>
+<div class="contact-info-cards">
+  <div class="contact-card"><div class="cc-icon">📞</div><div><h3>Phone</h3><p><a href="tel:061226227">061 226 227</a><br><a href="tel:0879277577">087 927 7577</a></p></div></div>
+  <div class="contact-card"><div class="cc-icon">💬</div><div><h3>WhatsApp</h3><p><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank">Message us on WhatsApp</a><br><span style="font-size:.8rem;color:var(--gray)">Usually replies within 30 mins</span></p></div></div>
+  <div class="contact-card"><div class="cc-icon">✉️</div><div><h3>Email</h3><p><a class="eml" data-u="info" data-d="atlanticloohire.ie">loading...</a><br><a class="eml" data-u="charlie.curtin" data-d="atlanticloohire.ie">loading...</a></p></div></div>
+  <div class="contact-card"><div class="cc-icon">📍</div><div><h3>Address</h3><p>Mount Mungret, Mungret, Co. Limerick</p></div></div>
+  <div class="contact-card"><div class="cc-icon">🕐</div><div><h3>Opening Hours</h3><p>Monday to Friday: 9:00 - 5:30</p></div></div>
+</div>
 </div></div></section>
 </div>
 
-<!-- PAY INVOICE -->
 <div class="page" id="page-pay-invoice">
 <section class="page-hero"><div class="breadcrumb"><a onclick="navigate('home')">Home</a><span>/</span><span>Pay an Invoice</span></div><h1>Pay an Invoice</h1><p>Pay an outstanding invoice securely.</p></section>
 <section><div class="section-inner"><div class="invoice-form">
-  <label>Your Name *</label><input type="text" placeholder="Full name">
-  <label>Invoice Number *</label><input type="text" placeholder="e.g. ALH-00123">
-  <label>Amount (EUR) *</label><div class="amount-input"><input type="number" placeholder="0.00" min="0" step="0.01"></div>
-  <label>Email</label><input type="email" placeholder="Your email for receipt">
-  <button type="button" class="btn btn-primary">Proceed to Payment →</button>
-  <p style="font-size:.8rem;color:var(--gray);margin-top:16px;text-align:center">Queries? <a href="mailto:info@atlanticloohire.ie" style="color:var(--blue)">info@atlanticloohire.ie</a> or <a href="tel:061226227" style="color:var(--blue)">061 226 227</a></p>
+<label>Your Name *</label><input type="text" placeholder="Full name">
+<label>Invoice Number *</label><input type="text" placeholder="e.g. ALH-00123">
+<label>Amount (EUR) *</label><div class="amount-input"><input type="number" placeholder="0.00" min="0" step="0.01"></div>
+<label>Email</label><input type="email" placeholder="Your email for receipt">
+<button type="button" class="btn btn-primary">Proceed to Payment →</button>
+<p style="font-size:.8rem;color:var(--gray);margin-top:16px;text-align:center">Queries? <a class="eml" data-u="info" data-d="atlanticloohire.ie" style="color:var(--blue)">loading...</a> or <a href="tel:061226227" style="color:var(--blue)">061 226 227</a></p>
 </div></div></section>
 </div>
 
-<!-- CTA shared -->
 <section class="cta-banner" id="shared-cta" style="display:none">
-  <h2>Ready to Book Your Portable Loos?</h2><p>Get in touch today for a free, no-obligation quote.</p>
-  <div class="cta-buttons">
-    <a href="tel:061226227" class="btn btn-white">📞 Call 061 226 227</a>
-    <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
-    <a class="btn btn-outline" onclick="navigate('contact')">✉️ Email Us</a>
-  </div>
+<h2>Ready to Book Your Portable Loos?</h2><p>Get in touch today for a free, no-obligation quote.</p>
+<div class="cta-buttons">
+  <a href="tel:061226227" class="btn btn-white">📞 Call 061 226 227</a>
+  <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="btn btn-whatsapp">💬 WhatsApp</a>
+  <a class="btn btn-outline" onclick="navigate('contact')">✉️ Email Us</a>
+</div>
 </section>
 
-<!-- FLOATING -->
 <div class="floating-buttons">
-  <a href="tel:061226227" class="fab fab-phone" title="Call Us">📞</a>
-  <a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="fab fab-whatsapp" title="WhatsApp">💬</a>
-  <button class="fab fab-chat" onclick="toggleChat()" title="Live Chat">🗨️</button>
+<a href="tel:061226227" class="fab fab-phone" title="Call Us">📞</a>
+<a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank" class="fab fab-whatsapp" title="WhatsApp">💬</a>
+<button class="fab fab-chat" onclick="toggleChat()" title="Live Chat">🗨️</button>
 </div>
 
-<!-- CHAT -->
 <div class="chat-widget" id="chatWidget">
-  <div class="chat-header"><div><h3>Atlantic Loo Hire</h3><p>We typically reply within minutes</p></div><button class="chat-close" onclick="toggleChat()">✕</button></div>
-  <div class="chat-body" id="chatBody"><div class="chat-msg bot">Hi there! 👋 How can we help you today?</div></div>
-  <div class="chat-options" id="chatOptions">
-    <button class="chat-opt" onclick="chatQuickReply('I need a quote')">Get a Quote</button>
-    <button class="chat-opt" onclick="chatQuickReply('What services do you offer?')">Our Services</button>
-    <button class="chat-opt" onclick="chatQuickReply('What areas do you cover?')">Areas Covered</button>
-    <button class="chat-opt" onclick="chatQuickReply('I need to hire for an event')">Event Hire</button>
-  </div>
-  <div class="chat-footer"><input type="text" id="chatInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">Send</button></div>
+<div class="chat-header"><div><h3>Atlantic Loo Hire</h3><p>We typically reply within minutes</p></div><button class="chat-close" onclick="toggleChat()">&#10005;</button></div>
+<div class="chat-body" id="chatBody"><div class="chat-msg bot">Hi there! 👋 How can we help you today?</div></div>
+<div class="chat-options" id="chatOptions">
+  <button class="chat-opt" onclick="chatQuickReply('I need a quote')">Get a Quote</button>
+  <button class="chat-opt" onclick="chatQuickReply('What services do you offer?')">Our Services</button>
+  <button class="chat-opt" onclick="chatQuickReply('What areas do you cover?')">Areas Covered</button>
+  <button class="chat-opt" onclick="chatQuickReply('I need to hire for an event')">Event Hire</button>
+</div>
+<div class="chat-footer"><input type="text" id="chatInput" placeholder="Type a message..." onkeydown="if(event.key==='Enter')sendChat()"><button onclick="sendChat()">Send</button></div>
 </div>
 
-<!-- FOOTER -->
 <footer><div class="footer-inner"><div class="footer-grid">
-  <div class="footer-brand"><a class="logo" onclick="navigate('home')"><div class="logo-icon">🚽</div>Atlantic Loo Hire</a><p>Premier portable toilet hire across Limerick, Munster and nationwide.</p></div>
-  <div><h4>Services</h4><ul><li><a onclick="navigate('work-site-loo')">Work Site Loo</a></li><li><a onclick="navigate('country-classic-loo')">Country Classic Loo</a></li><li><a onclick="navigate('urinal-pods')">Urinal Pods</a></li><li><a onclick="navigate('wheelchair-accessible-loo')">Accessible Toilet</a></li><li><a onclick="navigate('effluent-holding-tanks')">Holding Tanks</a></li></ul></div>
-  <div><h4>Coverage</h4><ul><li><a onclick="navigate('area-limerick')">Limerick</a></li><li><a onclick="navigate('area-cork')">Cork</a></li><li><a onclick="navigate('area-kerry')">Kerry</a></li><li><a onclick="navigate('area-clare')">Clare</a></li><li><a onclick="navigate('area-ireland')">Nationwide</a></li></ul></div>
-  <div><h4>Contact</h4><ul><li><a href="tel:061226227">061 226 227</a></li><li><a href="tel:0879277577">087 927 7577</a></li><li><a href="mailto:info@atlanticloohire.ie">info@atlanticloohire.ie</a></li><li><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank">WhatsApp Us</a></li><li style="margin-top:8px;color:rgba(255,255,255,.4);font-size:.82rem">Mount Mungret, Mungret<br>Co. Limerick</li></ul></div>
+<div class="footer-brand"><a class="logo" onclick="navigate('home')"><div class="logo-icon">🚽</div>Atlantic Loo Hire</a><p>Premier portable toilet hire across Limerick, Munster and nationwide.</p></div>
+<div><h4>Services</h4><ul><li><a onclick="navigate('work-site-loo')">Work Site Loo</a></li><li><a onclick="navigate('country-classic-loo')">Country Classic Loo</a></li><li><a onclick="navigate('urinal-pods')">Urinal Pods</a></li><li><a onclick="navigate('wheelchair-accessible-loo')">Accessible Toilet</a></li><li><a onclick="navigate('effluent-holding-tanks')">Holding Tanks</a></li></ul></div>
+<div><h4>Coverage</h4><ul><li><a onclick="navigate('area-limerick')">Limerick</a></li><li><a onclick="navigate('area-cork')">Cork</a></li><li><a onclick="navigate('area-kerry')">Kerry</a></li><li><a onclick="navigate('area-clare')">Clare</a></li><li><a onclick="navigate('area-ireland')">Nationwide</a></li></ul></div>
+<div><h4>Contact</h4><ul><li><a href="tel:061226227">061 226 227</a></li><li><a href="tel:0879277577">087 927 7577</a></li><li><a class="eml" data-u="info" data-d="atlanticloohire.ie">loading...</a></li><li><a href="https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire" target="_blank">WhatsApp Us</a></li><li style="margin-top:8px;color:rgba(255,255,255,.4);font-size:.82rem">Mount Mungret, Mungret<br>Co. Limerick</li></ul></div>
 </div><div class="footer-bottom"><span>&copy; 2026 Atlantic Loo Hire Ltd. All rights reserved.</span><span>Mon - Fri: 9:00 - 5:30</span></div></div></footer>
 
 <script>
-const WA='https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire';
-const services={
-  'work-site-loo':{t:'Work Site Loos',e:'🏗️',d:'Durable, efficient portable toilets for construction sites and demanding work environments.',
-    f:[['💪','Durability','High-quality materials for the toughest conditions.'],['⚡','Efficiency','Recirculating flush with hand pump and foot-pump wash basin.'],['✨','Hygiene','Regular cleaning with scheduled service plans.'],['♿','Accessibility','Options for individuals with disabilities.'],['🔧','Custom Solutions','Tailored to your site requirements.']],
-    h:['Years of work site experience','Reliable units you depend on','Exceptional satisfaction record','Full delivery and collection'],
-    q:[['How often are they cleaned?','Regular cleaning with a scheduled service plan for busy sites.'],['Can they handle tough weather?','Built for durability and resilience in all conditions.']]},
-  'country-classic-loo':{t:'Country Classic Loos',e:'🌿',d:'Elegantly designed self-sanitising toilets combining aesthetic charm with modern comfort.',
-    f:[['🎨','Aesthetic Appeal','Charming exterior enhancing your event ambiance.'],['✨','Modern Comfort','Anti-bacterial sanitiser, no sink needed.'],['🏠','Double Insulated','Cool interior even in extreme heat.'],['🎉','Versatility','Weddings, golf courses, marathons, corporate events.'],['🔧','Customisation','Matched to your event theme.']],
-    h:['Elegance meets function','Professional event service','Trusted by wedding planners','Self-sanitising technology'],
-    q:[['Suitable for weddings?','Specifically designed for elegance at formal outdoor events.'],['Can they match our theme?','We customise to complement your event ambiance.']]},
-  'urinal-pods':{t:'Urinal Pods',e:'🚹',d:'Space-saving units to reduce wait times at concerts, festivals, and large gatherings.',
-    f:[['📐','Space Efficiency','Maximise space at events with large crowds.'],['⚡','Quick Accessibility','Minimal wait times for guests.'],['✨','Hygienic Design','Easy to clean and maintain.'],['🎵','Versatility','Festivals, sporting events, large gatherings.'],['🌿','Eco-Friendly','Water-saving, eco-friendly materials.']],
-    h:['Cutting-edge solutions','Any crowd size','Purpose-built for high-traffic','Fast turnaround delivery'],
-    q:[['Are they eco-friendly?','Yes. Water-saving features and eco-friendly materials.'],['Suitable for large crowds?','Engineered specifically for high-traffic events.']]},
-  'wheelchair-accessible-loo':{t:'Wheelchair Accessible Loo',e:'♿',d:'Spacious with wide doorways, hand rails, and ample room for wheelchair users.',
-    f:[['📐','Spacious Design','Ample room for mobility aids.'],['♿','Accessibility','Wide doorway, hand rails, ramp entry.'],['🔒','Comfort & Privacy','Dignified environment for all.'],['✨','Hygienic Standards','Stringent cleaning schedules.'],['🔧','Customisation','Tailored placement and setup.']],
-    h:['Commitment to inclusivity','Professional installation','Standards compliant','Customer-centric approach'],
-    q:[['What features are included?','Ramps, handrails, wide doorways, spacious interiors.'],['Can they be installed anywhere?','Yes. Events, construction sites, and various settings.']]},
-  'effluent-holding-tanks':{t:'Effluent Holding Tanks',e:'🛢️',d:'Reliable waste containment from 1,000L to 2,500L in steel and plastic.',
-    f:[['📊','Capacity Options','1,000L to 2,500L in steel and plastic.'],['💪','Durability','Robust materials for heavy use.'],['🌿','Eco-Friendly','Environmentally responsible disposal.'],['🔧','Easy Maintenance','Simple cleaning, regular servicing.'],['📋','Compliance','Meets industry waste management standards.']],
-    h:['Waste management expertise','Professional installation/removal','1,000L to 2,500L options','Vacuum pump servicing'],
-    q:[['How often do they need servicing?','Custom schedule based on your project.'],['Are they eco-friendly?','Yes. Eco-friendly materials and responsible disposal.']]}
-};
-const areas={'area-limerick':'Limerick','area-cork':'Cork','area-kerry':'Kerry','area-clare':'Clare','area-ireland':'Ireland'};
+// Build email links via JS so Cloudflare cannot detect and mangle them
+(function(){var e=document.querySelectorAll('.eml');for(var i=0;i<e.length;i++){var u=e[i].getAttribute('data-u'),d=e[i].getAttribute('data-d'),addr=u+'@'+d;e[i].href='mail'+'to:'+addr;e[i].textContent=addr;}})();
 
-function navigate(p){window.location.hash=p}
+var WA='https://wa.me/353879277577?text=Hi%2C%20I%27d%20like%20a%20quote%20for%20portable%20toilet%20hire';
+var services={
+'work-site-loo':{t:'Work Site Loos',e:'🏗️',d:'Durable, efficient portable toilets for construction sites and demanding work environments.',
+  f:[['💪','Durability','High-quality materials for the toughest conditions.'],['⚡','Efficiency','Recirculating flush with hand pump and foot-pump wash basin.'],['✨','Hygiene','Regular cleaning with scheduled service plans.'],['♿','Accessibility','Options for individuals with disabilities.'],['🔧','Custom Solutions','Tailored to your site requirements.']],
+  h:['Years of work site experience','Reliable units you depend on','Exceptional satisfaction record','Full delivery and collection'],
+  q:[['How often are they cleaned?','Regular cleaning with a scheduled service plan for busy sites.'],['Can they handle tough weather?','Built for durability and resilience in all conditions.']]},
+'country-classic-loo':{t:'Country Classic Loos',e:'🌿',d:'Elegantly designed self-sanitising toilets combining aesthetic charm with modern comfort.',
+  f:[['🎨','Aesthetic Appeal','Charming exterior enhancing your event ambiance.'],['✨','Modern Comfort','Anti-bacterial sanitiser, no sink needed.'],['🏠','Double Insulated','Cool interior even in extreme heat.'],['🎉','Versatility','Weddings, golf courses, marathons, corporate events.'],['🔧','Customisation','Matched to your event theme.']],
+  h:['Elegance meets function','Professional event service','Trusted by wedding planners','Self-sanitising technology'],
+  q:[['Suitable for weddings?','Specifically designed for elegance at formal outdoor events.'],['Can they match our theme?','We customise to complement your event ambiance.']]},
+'urinal-pods':{t:'Urinal Pods',e:'🚹',d:'Space-saving units to reduce wait times at concerts, festivals, and large gatherings.',
+  f:[['📐','Space Efficiency','Maximise space at events with large crowds.'],['⚡','Quick Accessibility','Minimal wait times for guests.'],['✨','Hygienic Design','Easy to clean and maintain.'],['🎵','Versatility','Festivals, sporting events, large gatherings.'],['🌿','Eco-Friendly','Water-saving, eco-friendly materials.']],
+  h:['Cutting-edge solutions','Any crowd size','Purpose-built for high-traffic','Fast turnaround delivery'],
+  q:[['Are they eco-friendly?','Yes. Water-saving features and eco-friendly materials.'],['Suitable for large crowds?','Engineered specifically for high-traffic events.']]},
+'wheelchair-accessible-loo':{t:'Wheelchair Accessible Loo',e:'♿',d:'Spacious with wide doorways, hand rails, and ample room for wheelchair users.',
+  f:[['📐','Spacious Design','Ample room for mobility aids.'],['♿','Accessibility','Wide doorway, hand rails, ramp entry.'],['🔒','Comfort and Privacy','Dignified environment for all.'],['✨','Hygienic Standards','Stringent cleaning schedules.'],['🔧','Customisation','Tailored placement and setup.']],
+  h:['Commitment to inclusivity','Professional installation','Standards compliant','Customer-centric approach'],
+  q:[['What features are included?','Ramps, handrails, wide doorways, spacious interiors.'],['Can they be installed anywhere?','Yes. Events, construction sites, and various settings.']]},
+'effluent-holding-tanks':{t:'Effluent Holding Tanks',e:'🛢️',d:'Reliable waste containment from 1,000L to 2,500L in steel and plastic.',
+  f:[['📊','Capacity Options','1,000L to 2,500L in steel and plastic.'],['💪','Durability','Robust materials for heavy use.'],['🌿','Eco-Friendly','Environmentally responsible disposal.'],['🔧','Easy Maintenance','Simple cleaning, regular servicing.'],['📋','Compliance','Meets industry waste management standards.']],
+  h:['Waste management expertise','Professional installation and removal','1,000L to 2,500L options','Vacuum pump servicing'],
+  q:[['How often do they need servicing?','Custom schedule based on your project.'],['Are they eco-friendly?','Yes. Eco-friendly materials and responsible disposal.']]}
+};
+var areas={'area-limerick':'Limerick','area-cork':'Cork','area-kerry':'Kerry','area-clare':'Clare','area-ireland':'Ireland'};
+
+function navigate(p){window.location.hash=p;}
 function renderPage(){
-  const h=window.location.hash.slice(1)||'home';
-  document.getElementById('mainNav').classList.remove('open');
-  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
-  const cta=document.getElementById('shared-cta');
-  if(h==='home'){document.getElementById('page-home').classList.add('active');cta.style.display=''}
-  else if(services[h]){renderService(h);document.getElementById('page-service').classList.add('active');cta.style.display=''}
-  else if(areas[h]){renderArea(h);document.getElementById('page-area').classList.add('active');cta.style.display=''}
-  else if(h==='contact'){document.getElementById('page-contact').classList.add('active');cta.style.display=''}
-  else if(h==='pay-invoice'){document.getElementById('page-pay-invoice').classList.add('active');cta.style.display='none'}
-  else{document.getElementById('page-home').classList.add('active');cta.style.display=''}
-  window.scrollTo(0,0);
-  setTimeout(()=>{document.querySelectorAll('.fade-up').forEach(el=>{el.classList.remove('visible');observer.observe(el)})},50);
+var h=window.location.hash.slice(1)||'home';
+document.getElementById('mainNav').classList.remove('open');
+var pages=document.querySelectorAll('.page');for(var i=0;i<pages.length;i++)pages[i].classList.remove('active');
+var cta=document.getElementById('shared-cta');
+if(h==='home'){document.getElementById('page-home').classList.add('active');cta.style.display='';}
+else if(services[h]){renderService(h);document.getElementById('page-service').classList.add('active');cta.style.display='';}
+else if(areas[h]){renderArea(h);document.getElementById('page-area').classList.add('active');cta.style.display='';}
+else if(h==='contact'){document.getElementById('page-contact').classList.add('active');cta.style.display='';}
+else if(h==='pay-invoice'){document.getElementById('page-pay-invoice').classList.add('active');cta.style.display='none';}
+else{document.getElementById('page-home').classList.add('active');cta.style.display='';}
+window.scrollTo(0,0);
+setTimeout(function(){var els=document.querySelectorAll('.fade-up');for(var i=0;i<els.length;i++){els[i].classList.remove('visible');observer.observe(els[i]);}},50);
 }
 function renderService(k){
-  const s=services[k];
-  document.getElementById('svc-bc').textContent=s.t;document.getElementById('svc-title').textContent=s.t;
-  document.getElementById('svc-desc').textContent=s.d;document.getElementById('svc-feat-title').textContent='What Sets Our '+s.t+' Apart';
-  document.getElementById('svc-emoji').textContent=s.e;document.getElementById('svc-why-title').textContent='Atlantic Loo Hire for '+s.t;
-  document.getElementById('svc-faq-title').textContent=s.t+' Questions';
-  let f='';s.f.forEach(x=>{f+=`<div class="feature-card fade-up"><div class="feature-icon">${x[0]}</div><div><h3>${x[1]}</h3><p>${x[2]}</p></div></div>`});
-  document.getElementById('svc-features').innerHTML=f;
-  let hl='';s.h.forEach(x=>{hl+=`<li>${x}</li>`});document.getElementById('svc-highlights').innerHTML=hl;
-  let q='';s.q.forEach(x=>{q+=`<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">${x[0]}<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">${x[1]}</div></div></div>`});
-  document.getElementById('svc-faq').innerHTML=q;
+var s=services[k];
+document.getElementById('svc-bc').textContent=s.t;document.getElementById('svc-title').textContent=s.t;
+document.getElementById('svc-desc').textContent=s.d;document.getElementById('svc-feat-title').textContent='What Sets Our '+s.t+' Apart';
+document.getElementById('svc-emoji').textContent=s.e;document.getElementById('svc-why-title').textContent='Atlantic Loo Hire for '+s.t;
+document.getElementById('svc-faq-title').textContent=s.t+' Questions';
+var f='';for(var i=0;i<s.f.length;i++){var x=s.f[i];f+='<div class="feature-card fade-up"><div class="feature-icon">'+x[0]+'</div><div><h3>'+x[1]+'</h3><p>'+x[2]+'</p></div></div>';}
+document.getElementById('svc-features').innerHTML=f;
+var hl='';for(var i=0;i<s.h.length;i++)hl+='<li>'+s.h[i]+'</li>';
+document.getElementById('svc-highlights').innerHTML=hl;
+var q='';for(var i=0;i<s.q.length;i++){var x=s.q[i];q+='<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">'+x[0]+'<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">'+x[1]+'</div></div></div>';}
+document.getElementById('svc-faq').innerHTML=q;
 }
 function renderArea(k){
-  const a=areas[k];
-  document.getElementById('area-bc').textContent='Portable Toilet Hire '+a;document.getElementById('area-title').textContent='Portable Toilet Hire '+a;
-  document.getElementById('area-desc').textContent='Dependable portable toilet hire in '+a+' for events, construction, and outdoor jobs.';
-  document.getElementById('area-label').innerHTML='<span style="width:20px;height:2px;background:var(--teal);border-radius:2px;display:inline-block;margin-right:8px"></span>Our Services in '+a;
-  document.getElementById('area-offer-title').textContent='What We Offer in '+a;
-  document.getElementById('area-svc1').textContent='Durable units for construction throughout '+a+'.';
-  document.getElementById('area-svc2').textContent='Premium event toilets for weddings and parties in '+a+'.';
-  document.getElementById('area-svc3').textContent='High-traffic solutions for festivals across '+a+'.';
-  document.getElementById('area-why-label').innerHTML='<span style="width:20px;height:2px;background:var(--teal);border-radius:2px;display:inline-block;margin-right:8px"></span>Why Choose Us in '+a;
-  document.getElementById('area-why-title').textContent='Trusted Portable Toilet Hire in '+a;
-  document.getElementById('area-cta-btn').textContent='Get a Quote for '+a+' →';
-  document.getElementById('area-faq-title').textContent='Portable Toilet Hire '+a+' FAQ';
-  let q='';
-  q+=`<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">How much does hire cost in ${a}?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Varies by location, units, and duration. Competitive rates, no hidden fees.</div></div></div>`;
-  q+=`<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Do you cover events and construction in ${a}?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Yes. All types with flexible terms.</div></div></div>`;
-  q+=`<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle('open')">How quickly can you deliver to ${a}?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Typically within 24 hours.</div></div></div>`;
-  document.getElementById('area-faq').innerHTML=q;
+var a=areas[k];
+document.getElementById('area-bc').textContent='Portable Toilet Hire '+a;
+document.getElementById('area-title').textContent='Portable Toilet Hire '+a;
+document.getElementById('area-desc').textContent='Dependable portable toilet hire in '+a+' for events, construction, and outdoor jobs.';
+document.getElementById('area-label').innerHTML='<span style="width:20px;height:2px;background:var(--teal);border-radius:2px;display:inline-block;margin-right:8px"></span>Our Services in '+a;
+document.getElementById('area-offer-title').textContent='What We Offer in '+a;
+document.getElementById('area-svc1').textContent='Durable units for construction throughout '+a+'.';
+document.getElementById('area-svc2').textContent='Premium event toilets for weddings and parties in '+a+'.';
+document.getElementById('area-svc3').textContent='High-traffic solutions for festivals across '+a+'.';
+document.getElementById('area-why-label').innerHTML='<span style="width:20px;height:2px;background:var(--teal);border-radius:2px;display:inline-block;margin-right:8px"></span>Why Choose Us in '+a;
+document.getElementById('area-why-title').textContent='Trusted Portable Toilet Hire in '+a;
+document.getElementById('area-cta-btn').textContent='Get a Quote for '+a+' \u2192';
+document.getElementById('area-faq-title').textContent='Portable Toilet Hire '+a+' FAQ';
+var q='';
+q+='<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">How much does hire cost in '+a+'?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Varies by location, units, and duration. Competitive rates, no hidden fees.</div></div></div>';
+q+='<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">Do you cover events and construction in '+a+'?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Yes. All types with flexible terms.</div></div></div>';
+q+='<div class="faq-item"><button class="faq-q" onclick="this.parentElement.classList.toggle(\'open\')">How quickly can you deliver to '+a+'?<span class="chv">▼</span></button><div class="faq-a"><div class="faq-a-inner">Typically within 24 hours.</div></div></div>';
+document.getElementById('area-faq').innerHTML=q;
 }
-function toggleChat(){document.getElementById('chatWidget').classList.toggle('open')}
+function toggleChat(){document.getElementById('chatWidget').classList.toggle('open');}
 function chatQuickReply(t){
-  addChatMsg(t,'user');document.getElementById('chatOptions').style.display='none';
-  setTimeout(()=>{let r='';
-    if(t.includes('quote'))r='For a quick quote, call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a>, <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a>, or use our <a onclick="navigate(&quot;contact&quot;);toggleChat();" style="color:var(--blue);cursor:pointer">quote form</a>.';
-    else if(t.includes('services')||t.includes('offer'))r='We provide Work Site Loos, Country Classic Loos, Urinal Pods, Wheelchair Accessible Toilets, Effluent Holding Tanks, and tank servicing.';
-    else if(t.includes('areas')||t.includes('cover'))r='We cover Limerick, Clare, Cork, Kerry, Galway, Tipperary, Kilkenny, and nationwide.';
-    else if(t.includes('event'))r="For events, our Country Classic Loo is the most popular. Self-sanitising, double insulated, looks great. How many guests?";
-    else r='Thanks! Call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a> or <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a>.';
-    addChatMsg(r,'bot
+addChatMsg(t,'user');document.getElementById('chatOptions').style.display='none';
+setTimeout(function(){var r='';
+if(t.indexOf('quote')>-1)r='For a quick quote, call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a>, <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a>, or use our <a href="#contact" onclick="navigate(&quot;contact&quot;);toggleChat();" style="color:var(--blue);cursor:pointer">quote form</a>.';
+else if(t.indexOf('services')>-1||t.indexOf('offer')>-1)r='We provide Work Site Loos, Country Classic Loos, Urinal Pods, Wheelchair Accessible Toilets, Effluent Holding Tanks, and tank servicing.';
+else if(t.indexOf('areas')>-1||t.indexOf('cover')>-1)r='We cover Limerick, Clare, Cork, Kerry, Galway, Tipperary, Kilkenny, and nationwide.';
+else if(t.indexOf('event')>-1)r='For events, our Country Classic Loo is the most popular. Self-sanitising, double insulated, looks great. How many guests?';
+else r='Thanks! Call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a> or <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a>.';
+addChatMsg(r,'bot');},800);
+}
+function sendChat(){var i=document.getElementById('chatInput');var t=i.value.trim();if(!t)return;i.value='';addChatMsg(t,'user');document.getElementById('chatOptions').style.display='none';
+setTimeout(function(){addChatMsg('Thanks! Call <a href="tel:061226227" style="color:var(--blue)">061 226 227</a> or <a href="'+WA+'" target="_blank" style="color:#25D366">WhatsApp us</a> for the quickest response.','bot');},1000);}
+function addChatMsg(h,t){var b=document.getElementById('chatBody');var m=document.createElement('div');m.className='chat-msg '+t;m.innerHTML=h;b.appendChild(m);b.scrollTop=b.scrollHeight;}
+var observer=new IntersectionObserver(function(e){for(var i=0;i<e.length;i++){if(e[i].isIntersecting)e[i].target.classList.add('visible');}},{threshold:0.1});
+window.addEventListener('hashchange',renderPage);
+renderPage();
+</script>
+</body>
+</html>
